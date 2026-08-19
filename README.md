@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 Cells marked **[slow]** train the DONNs (a CUDA GPU is used automatically if available; the NHCRB semidefinite programs are memory-heavy). Every other cell — including the figure cells marked **[fast]** — only reads the `.npz` files in `data/`, so all figures can be regenerated from the precomputed data without a GPU.
 
-**Note (no GPU):** retraining Fig. 4 at the field of view (L = 2 μm, ≈ 360 identifiable modes) realistically requires a GPU. To test the Fig. 4 pipeline on a CPU, set a smaller field of view, L ≈ 0.6 μm, for every entry of the `OBJECTS` dict in `WZL_Fig4.ipynb.` The mode count shrinks with the FOV and the code stays functional. Scale the object content down with it (the `syn2` mode indices and the atom-array `n_side`), since the band limit moves with $L$.
+**Note (no GPU):** retraining Fig. 4 at the field of view (L = 2 μm, ≈ 360 identifiable modes) realistically requires a GPU. To test the Fig. 4 pipeline on a CPU, set a smaller field of view, L ≈ 0.6 μm, for every entry of the `OBJECTS` dict in `WZL_Fig4.ipynb.` The mode count shrinks with the FOV and the code stays functional. Scale the object content down with it (the `syn2` mode indices and the atom-array `n_side`).
 
 ## Data
 
